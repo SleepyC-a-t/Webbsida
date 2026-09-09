@@ -14,13 +14,13 @@
     <div>
         <header><h1>TE24</h1></header>
         <nav>
-            <a href="#"><p>Hem</p></a>
-            <a href="#"><p>Information</p></a>
-            <a href="#"><p>Prov</p></a>
-            <a href="#"><p>Inlämningar</p></a>
+            <a href="#" data-page="pg1"><p>Hem</p></a>
+            <a href="#" data-page="pg2"><p>Information</p></a>
+            <a href="#" data-page="pg3"><p>Prov</p></a>
+            <a href="#" data-page="pg4"><p>Inlämningar</p></a>
             <hr>
         </nav>
-        <main>
+        <main class="pg1">
             <hr>
             <br>
             <div>Hejsan, denna sida är för nuvarande under utveckling, så det finns inte särskilt mycket på den just nu</div>
@@ -41,6 +41,51 @@
             </div>
 
             
+        </main>
+        <main class="pg2">
+            <div><p>Information</p></div>
+
+            <div class="ai-btn-fluid" id="aiBtn">
+                <img src="/assets/ai-icon.png" alt="AI Icon" class="ai-icon">
+            </div>
+
+            <div class="modal-overlay" id="aiModal">
+                <div class="modal-content">
+                    <button class="close-btn" id="closeBtn">&times;</button>
+                    <h2>AI Assistent</h2>
+                    <p>Här kan du skriva ditt meddelande eller starta en konversation.</p>
+                </div>
+            </div>
+        </main>
+        <main class="pg3">
+            <div><p>Prov</p></div>
+
+            <div class="ai-btn-fluid" id="aiBtn">
+                <img src="/assets/ai-icon.png" alt="AI Icon" class="ai-icon">
+            </div>
+
+            <div class="modal-overlay" id="aiModal">
+                <div class="modal-content">
+                    <button class="close-btn" id="closeBtn">&times;</button>
+                    <h2>AI Assistent</h2>
+                    <p>Här kan du skriva ditt meddelande eller starta en konversation.</p>
+                </div>
+            </div>
+        </main>
+        <main class="pg4">
+            <div><p>Inlämningar</p></div>
+
+            <div class="ai-btn-fluid" id="aiBtn">
+                <img src="/assets/ai-icon.png" alt="AI Icon" class="ai-icon">
+            </div>
+
+            <div class="modal-overlay" id="aiModal">
+                <div class="modal-content">
+                    <button class="close-btn" id="closeBtn">&times;</button>
+                    <h2>AI Assistent</h2>
+                    <p>Här kan du skriva ditt meddelande eller starta en konversation.</p>
+                </div>
+            </div>
         </main>
         <footer>&copy;TE24 2027</footer>
     </div>

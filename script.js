@@ -19,3 +19,23 @@ window.addEventListener('click', (event) => {
     aiModal.style.display = 'none';
   }
 });
+
+const navLinks = document.querySelectorAll("nav a");
+const pages = document.querySelectorAll("main");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        // Get the page we want to show
+        const pageToShow = this.dataset.page;
+
+        // Hide all pages
+        pages.forEach(page => {
+            page.style.display = "none";
+        });
+
+        // Show the selected page
+        document.querySelector("." + pageToShow).style.display = "block";
+    });
+});
