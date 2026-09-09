@@ -12,11 +12,11 @@ body{
 }
 
 body > div:nth-child(1){
-    background: linear-gradient(to top, #00008b, lightblue);
+    background: linear-gradient(to top, #00008b, #2b758d);
 }
 
 body > div:nth-child(2){
-    background: linear-gradient(to top, #add8e6, white);
+    background: linear-gradient(to top, #add8e6, #2b758d);
     grid-column: 2;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body > div:nth-child(2){
 }
 
 body > div:nth-child(3){
-    background: linear-gradient(to top, lightblue, darkblue);
+    background: linear-gradient(to top, #2b758d, #00008b);
 }
 main{
     background: none;
@@ -42,9 +42,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(lightblue, white);
+    background: radial-gradient(#060685, #2b758d);
     border-radius: 500px;
-    outline: solid lightblue;
+    outline: solid #060685;
 }
 nav{
     width: 60%;
@@ -53,7 +53,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background: radial-gradient(lightblue, white);
+    background: radial-gradient(#060685, #2b758d);
 }
 footer{
     width: 100%;
