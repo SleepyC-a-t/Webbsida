@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+main {
+    display: none;
+}
+
+main.pg1 {
+    display: block;
+}
+
 body{
     height: 100dvh;
     display: grid;
