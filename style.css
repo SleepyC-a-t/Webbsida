@@ -27,10 +27,6 @@ body > div:nth-child(2){
 body > div:nth-child(3){
     background: linear-gradient(to top, lightblue, darkblue);
 }
-
-
-
-
 main{
     background: none;
     flex: 1;
@@ -38,7 +34,6 @@ main{
     height: 74dvh;
     padding: 10px;
 }
-
 header{
     width: 75%;
     height: 10dvh;
@@ -49,7 +44,6 @@ header{
     border-radius: 500px;
     outline: solid lightblue;
 }
-
 nav{
     width: 60%;
     height: 8dvh;
@@ -59,11 +53,72 @@ nav{
     gap: 5px;
     background: radial-gradient(lightblue, white);
 }
-
 footer{
     width: 100%;
     height: 8dvh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.ai-btn-fluid {
+  /* Gradienten görs 200% bred för att ge utrymme att flytta på den */
+  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899, #6366f1);
+  background-size: 200% 200%; /* Säkerställer att bakgrunden är tillräckligt stor för att animeras */
+  
+  color: white;
+  padding: 28px 28px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+
+  top: 80%;
+  left: 90%;
+  position: absolute;
+  
+  /* Tog bort background-position från transition eftersom vi kör keyframes istället */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ai-btn-fluid:hover {
+  animation: gradientMove 3s linear infinite;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+}
+.ai-btn-fluid:active {
+  transform: translateY(0);
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.modal-overlay {
+  display: none; /* Dolt från början */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Hamnar ovanpå allt annat */
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-family: sans-serif;
+  animation: modalFadeIn 0.3s ease;
 }
