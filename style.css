@@ -40,11 +40,14 @@ main{
 }
 
 header{
-    width: 100%;
+    width: 75%;
     height: 10dvh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: radial-gradient(lightblue, white);
+    border-radius: 500px;
+    outline: solid lightblue;
 }
 
 nav{
