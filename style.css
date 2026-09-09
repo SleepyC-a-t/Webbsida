@@ -12,11 +12,11 @@ body{
 }
 
 body > div:nth-child(1){
-    background: linear-gradient(to top, darkblue, lightblue);
+    background: linear-gradient(to top, #00008b, lightblue);
 }
 
 body > div:nth-child(2){
-    background: linear-gradient(to top, lightblue, white);
+    background: linear-gradient(to top, #add8e6, white);
     grid-column: 2;
     display: flex;
     flex-direction: column;
